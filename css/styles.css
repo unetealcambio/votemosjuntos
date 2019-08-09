@@ -1,0 +1,124 @@
+a {
+  text-decoration: none !important;;
+}
+.encabezado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+#barra {
+  background-color: #54301a; 
+  color: white;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+#barra2 {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+img {
+  margin: 5px 10px 5px 0px; }
+
+.litle-text {
+  text-align: center; }
+
+.barra_partidos {
+  background-color: #1b508c;
+  color: white;
+  padding-top: 1.5em; }
+
+  .barra_partidos_eleccion {
+  background-color: #1b508c;
+  color: white;
+  padding-top: 0; }
+
+  .barra_partidos_eleccion h2{
+  font-size: 2rem;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+ .barra_partidos_eleccion h6{
+  font-size: 0.9rem;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.texto_inicio {
+  margin-bottom: 0px; }
+
+.green-text {
+  color: green; }
+
+#partidos-gallery {
+  padding-top: .8em;
+  text-align: center; }
+
+.caption {
+  font-size: 0.7em;
+  color: #000; }
+
+.black {
+  background-color: #000;
+}
+
+.black-text{
+  color: #000;
+}
+
+.divHijo {
+  background-color: #5d5d57;
+}
+
+.divHijo h5{
+  margin-bottom: 0;
+}
+
+.text-grande {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+footer {
+  font-size: 0.5em;
+}
+.elecciones p:first-child {
+  margin-bottom: 0.2em;
+}
+
+.marco {
+  border: 1px solid black;
+  margin-bottom: 10PX;
+}
+.blinking {
+  -webkit-animation: color_change 0.6s infinite alternate;
+  -moz-animation: color_change 0.6s infinite alternate;
+  -ms-animation: color_change 0.6s infinite alternate;
+  -o-animation: color_change 0.6s infinite alternate;
+  animation: color_change 0.6s infinite alternate;
+}
+
+
+@-webkit-keyframes color_change {
+  from { color: #000; }
+  to { color: #fff; }
+}
+@-moz-keyframes color_change {
+  from { color: #000; }
+  to { color: #fff; }
+}
+@-ms-keyframes color_change {
+  from { color: #000; }
+  to { color: #fff; }
+}
+@-o-keyframes color_change {
+  from { color: #000; }
+  to { color: #fff; }
+}
+@keyframes color_change {
+  from { color: #000; }
+  to { color: #fff; }
+
+
+/*# sourceMappingURL=styles.css.map */
