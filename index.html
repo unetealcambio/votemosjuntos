@@ -47,7 +47,8 @@
 		}
 		@keyframes color_change_green {
   			from { color: #04B404; }
-  			to { color: #81F781; }
+			  to { color: #81F781; }
+		}
 	</style>
 
 	<title>Simulador de Votos</title>
@@ -125,5 +126,14 @@
 	<script type="text/javascript" src="js/jquery-3.3.1.slim.min.js" ></script>
 	<script type="text/javascript" src="js/popper.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+				setTimeout(function(){
+			  		var audio1 = new Audio();
+			  		audio1.src = "audio/seleccion_partido.mp3";
+			  		audio1.play();
+				}, 500);
+			})
+	</script>
 </body>
 </html>
