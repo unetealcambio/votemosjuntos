@@ -1,2 +1,2 @@
-# votemosjuntos
-Simulador de Voto Para Primarias 2019
+# votoautomatizado
+Simulador de Voto Automatizado en Republica Dominicana Para las Elecciones del 6 de Octubre 2019

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
@@ -13,48 +14,107 @@
 
 	<style type="text/css">
 		.blinking_white {
-  			-webkit-animation: color_change_white 0.6s infinite alternate;
-  			-moz-animation: color_change_white 0.6s infinite alternate;
-  			-ms-animation: color_change_white 0.6s infinite alternate;
-  			-o-animation: color_change_white 0.6s infinite alternate;
-  			animation: color_change_white 0.6s infinite alternate;
+			-webkit-animation: color_change_white 0.6s infinite alternate;
+			-moz-animation: color_change_white 0.6s infinite alternate;
+			-ms-animation: color_change_white 0.6s infinite alternate;
+			-o-animation: color_change_white 0.6s infinite alternate;
+			animation: color_change_white 0.6s infinite alternate;
 		}
+
 		@-webkit-keyframes color_change_white {
-  			from { color: #fff; }
-  			to { color: #bbb; }
+			from {
+				color: #fff;
+			}
+
+			to {
+				color: #bbb;
+			}
 		}
+
 		@-moz-keyframes color_change_white {
-  			from { color: #fff; }
-  			to { color: #bbb; }
+			from {
+				color: #fff;
+			}
+
+			to {
+				color: #bbb;
+			}
 		}
+
 		@-ms-keyframes color_change_white {
-  			from { color: #fff; }
-  			to { color: #bbb; }
+			from {
+				color: #fff;
+			}
+
+			to {
+				color: #bbb;
+			}
 		}
+
 		@-o-keyframes color_change_white {
-  			from { color: #fff; }
-  			to { color: #bbb; }
+			from {
+				color: #fff;
+			}
+
+			to {
+				color: #bbb;
+			}
 		}
+
 		@keyframes color_change_white {
+			from {
+				color: #fff;
+			}
+
+			to {
+				color: #bbb;
+			}
+		}
+
+		.blinking_number {
+  			-webkit-animation: color_change_black 0.8s infinite alternate;
+  			-moz-animation: color_change_black 0.8s infinite alternate;
+  			-ms-animation: color_change_black 0.8s infinite alternate;
+  			-o-animation: color_change_black 0.8s infinite alternate;
+  			animation: color_change_black 0.8s infinite alternate;
+		}
+		@-webkit-keyframes color_change_black {
   			from { color: #fff; }
-			  to { color: #bbb; }
+  			to { color: #000; }
+		}
+		@-moz-keyframes color_change_black {
+  			from { color: #fff; }
+  			to { color: #000; }
+		}
+		@-ms-keyframes color_change_black {
+  			from { color: #fff; }
+  			to { color: #000; }
+		}
+		@-o-keyframes color_change_black {
+  			from { color: #fff; }
+  			to { color: #000; }
+		}
+		@keyframes color_change_black {
+  			from { color: #fff; }
+  			to { color: #000; }
 		}
 	</style>
 
 
 
 	<title>Simulador de Votos</title>
-	
+
 </head>
+
 <body>
-	
+
 	<div class="container">
-		<div class="row" id="barra">
-			<div class="col-12 text-center">
-				<h1>APRENDAMOS A VOTAR JUNTOS!</h1>
+		<div class="row">
+			<div class="col-12" style="background-color: #54301a; display: flex; justify-content: space-between;">
+				<img src="/images/logo_junta_blanco.png" id="backup_picture" class="img-fluid widthImagen">
+				<img src="/images/rafa-logo.png" id="backup_picture2" style="width: 8%;">
 			</div>
 		</div>
-
 		<div class="row ">
 			<div class="col-12 ">
 				<p class="text-center texto_inicio"><strong>Simulador Sistema De Voto Automatizado </strong></p>
@@ -64,199 +124,239 @@
 			</div>
 		</div>
 
-		<div class="row text-center" >
-			<div class="col-1" style="padding: 0px; margin: 0px;">
-				<div class="thumbnail">
-					<img src="images/prm-logo.png" class="img-thumbnail" style="width: 100%; height: 100%; margin: 0px">
+		<div class="row text-center" style="display: flex; justify-content: space-between;">
+			
+				<div class="thumbnail" style="width: 10%;">
+					<img src="" id="logo-final" class="img-thumbnail" style="width: 100%; height: 100%; margin: 0px">
 				</div>
-			</div>
-			<div class="col-10 barra_partidos_eleccion">
-				<h6>Nivel: Municipal</h6>
+			
+				<div class="barraDatos" style="width: 80%;">
+				<h5>Nivel: Municipal</h5>
 				<h2 class="blinking_white">REGIDOR(A)</h2>
-				<h6 class="blinking_white" style="font-size: 12px; margin: 0%;">TOQUE EL RECUADRO DE SU PREFERENCIA</h6>
-			</div>
-			<div class="col-1" style="padding: 0px; margin: 0px;">
-				<div class="thumbnail">
-					<img src="images/r.png" class="img img-thumbnail margin-right" style="width: 100%; height: 100%; margin: 0px">
+				<h6 class="blinking_white">TOQUE EL RECUADRO DE SU PREFERENCIA</h6>
 				</div>
-			</div>	
+				
+			
+			
+				<div class="thumbnail" style="width: 10%;">
+					<img src="images/r.png" class="img img-thumbnail margin-right"
+						style="width: 100%; height: 100%; margin: 0px">
+				</div>
+			
 		</div>
 
 		<div class="row" id="partidos-gallery">
-			<div class="col-4 col-md-2" >
-				<div class="thumbnail marco">
+			<div class="col-4 col-md-2">
+				<div class="thumbnail marco" style="display: flex;justify-content: flex-end;">
+					<div class="numero">1</div>
 					<a href="#">
-						<img src="images/Candidato-M.PNG" class="img-thumbnail">
-						<p class="caption"><strong>CANDIDATO 1 <BR>REGIDOR(A)</strong></p>
+						<img src="images/candidatos/Candidato-F.PNG" class="img-thumbnail">
+						<p class="caption"><strong>CANDIDATO(A)<BR>REGIDOR(A)</strong></p>
+					</a>
+				</div>
+			</div>
+			<div class="col-4 col-md-2">
+				<div class="thumbnail marco" style="display: flex;justify-content: flex-end;">
+					<div class="numero">2</div>
+					<a href="#">
+						<img src="images/candidatos/Candidato-M.PNG" class="img-thumbnail">
+						<p class="caption"><strong>CANDIDATO(A)<BR>REGIDOR(A)</strong></p>
+					</a>
+				</div>
+			</div>
+			<div class="col-4 col-md-2">
+				<div class="thumbnail marco" style="display: flex;justify-content: flex-end;">
+					<div class="numero">3</div>
+					<a href="#">
+						<img src="images/candidatos/Candidato-M.PNG" class="img-thumbnail">
+						<p class="caption"><strong>CANDIDATO(A)<BR>REGIDOR(A)</strong></p>
+					</a>
+				</div>
+			</div>
+			<div class="col-4 col-md-2">
+				<div class="thumbnail marco" style="display: flex;justify-content: flex-end;">
+					<div class="numero blinking_number">4</div>
+					<a href="#">
+						<img src="images/candidatos/francisco.jpg" class="img-thumbnail" id="candidatoR4">
+						<p class="caption blinking_number"><strong>FRANCISCO FRIAS<BR>REGIDOR(A)</strong></p>
+					</a>
+				</div>
+			</div>
+			<div class="col-4 col-md-2">
+				<div class="thumbnail marco" style="display: flex;justify-content: flex-end;">
+					<div class="numero">5</div>
+					<a href="#">
+						<img src="images/candidatos/Candidato-F.PNG" class="img-thumbnail">
+						<p class="caption"><strong>CANDIDATO(A)<BR>REGIDOR(A)</strong></p>
+					</a>
+				</div>
+			</div>
+			<div class="col-4 col-md-2">
+				<div class="thumbnail marco" style="display: flex;justify-content: flex-end;">
+					<div class="numero">6</div>
+					<a href="#">
+						<img src="images/candidatos/Candidato-M.PNG" class="img-thumbnail">
+						<p class="caption"><strong>CANDIDATO(A)<BR>REGIDOR(A)</strong></p>
+					</a>
+				</div>
+			</div>
+			<div class="col-4 col-md-2">
+				<div class="thumbnail marco" style="display: flex;justify-content: flex-end;">
+					<div class="numero">7</div>
+					<a href="#">
+						<img src="images/candidatos/Candidato-F.PNG" class="img-thumbnail">
+						<p class="caption"><strong>CANDIDATO(A)<BR>REGIDOR(A)</strong></p>
+					</a>
+				</div>
+			</div>
+			<div class="col-4 col-md-2">
+				<div class="thumbnail marco" style="display: flex;justify-content: flex-end;">
+					<div class="numero">8</div>
+					<a href="#">
+						<img src="images/candidatos/Candidato-M.PNG" class="img-thumbnail">
+						<p class="caption"><strong>CANDIDATO(A)<BR>REGIDOR(A)</strong></p>
+					</a>
+				</div>
+			</div>
+			<div class="col-4 col-md-2">
+				<div class="thumbnail marco" style="display: flex;justify-content: flex-end;">
+					<div class="numero">9</div>
+					<a href="#">
+						<img src="images/candidatos/Candidato-M.PNG" class="img-thumbnail">
+						<p class="caption"><strong>CANDIDATO(A)<BR>REGIDOR(A)</strong></p>
+					</a>
+				</div>
+			</div>
+			<div class="col-4 col-md-2">
+				<div class="thumbnail marco" style="display: flex;justify-content: flex-end;">
+					<div class="numero">10</div>
+					<a href="#">
+						<img src="images/candidatos/Candidato-M.PNG" class="img-thumbnail">
+						<p class="caption"><strong>CANDIDATO(A)<BR>REGIDOR(A)</strong></p>
+					</a>
+				</div>
+			</div>
+			<div class="col-4 col-md-2">
+				<div class="thumbnail marco" style="display: flex;justify-content: flex-end;">
+					<div class="numero">11</div>
+					<a href="#">
+						<img src="images/candidatos/Candidato-F.PNG" class="img-thumbnail">
+						<p class="caption"><strong>CANDIDATO(A)<BR>REGIDOR(A)</strong></p>
+					</a>
+				</div>
+			</div>
+			<div class="col-4 col-md-2">
+				<div class="thumbnail marco" style="display: flex;justify-content: flex-end;">
+					<div class="numero">12</div>
+					<a href="#">
+						<img src="images/candidatos/Candidato-M.PNG" class="img-thumbnail">
+						<p class="caption"><strong>CANDIDATO(A)<BR>REGIDOR(A)</strong></p>
+					</a>
+				</div>
+			</div>
+			<div class="col-4 col-md-2">
+				<div class="thumbnail marco" style="display: flex;justify-content: flex-end;">
+					<div class="numero">13</div>
+					<a href="#">
+						<img src="images/candidatos/Candidato-F.PNG" class="img-thumbnail">
+						<p class="caption"><strong>CANDIDATO(A)<BR>REGIDOR(A)</strong></p>
+					</a>
+				</div>
+			</div>
+			<div class="col-4 col-md-2">
+				<div class="thumbnail marco" style="display: flex;justify-content: flex-end;">
+					<div class="numero">14</div>
+					<a href="#">
+						<img src="images/candidatos/Candidato-M.PNG" class="img-thumbnail">
+						<p class="caption"><strong>CANDIDATO(A)<BR>REGIDOR(A)</strong></p>
+					</a>
+				</div>
+			</div>
+			<div class="col-4 col-md-2">
+				<div class="thumbnail marco" style="display: flex;justify-content: flex-end;">
+					<div class="numero">15</div>
+					<a href="#">
+						<img src="images/candidatos/Candidato-F.PNG" class="img-thumbnail">
+						<p class="caption"><strong>CANDIDATO(A)<BR>REGIDOR(A)</strong></p>
+					</a>
+				</div>
+			</div>
+			<div class="col-4 col-md-2">
+				<div class="thumbnail marco" style="display: flex;justify-content: flex-end;">
+					<div class="numero">16</div>
+					<a href="#">
+						<img src="images/candidatos/Candidato-F.PNG" class="img-thumbnail">
+						<p class="caption"><strong>CANDIDATO(A)<BR>REGIDOR(A)</strong></p>
+					</a>
+				</div>
+			</div>
+			<div class="col-4 col-md-2">
+				<div class="thumbnail marco" style="display: flex;justify-content: flex-end;">
+					<div class="numero">17</div>
+					<a href="#">
+						<img src="images/candidatos/Candidato-F.PNG" class="img-thumbnail">
+						<p class="caption"><strong>CANDIDATO(A)<BR>REGIDOR(A)</strong></p>
 					</a>
 				</div>
 			</div>
 			<div class="col-4 col-md-2">
 				<div class="thumbnail marco">
 					<a href="#">
-           				 <img src="images/Candidato-M.PNG" class="img-thumbnail">
-           				 <p class="caption"><strong>CANDIDATO 2 <BR>REGIDOR(A)</strong></p>
-					</a>
-				</div>
-			</div>
-			<div class="col-4 col-md-2">
-				<div class="thumbnail marco">
-					<a href="#">
-						<img src="images/Candidato-F.PNG" class="img-thumbnail">
-						<p class="caption"><strong>CANDIDATO 3 <BR>REGIDOR(A)</strong></p>
-					</a>
-				</div>
-			</div>
-			<div class="col-4 col-md-2">
-				<div class="thumbnail marco">
-					<a href="#">
-						<img src="images/Candidato-M.PNG" class="img-thumbnail">
-						<p class="caption"><strong>CANDIDATO 4 <BR>REGIDOR(A)</strong></p>
-					</a>
-				</div>
-			</div>
-			<div class="col-4 col-md-2">
-				<div class="thumbnail marco">
-					<a href="#">
-						<img src="images/Candidato-F.PNG" class="img-thumbnail">
-						<p class="caption"><strong>CANDIDATO 5 <BR>REGIDOR(A)</strong></p>
-					</a>
-				</div>
-			</div>
-			<div class="col-4 col-md-2">
-				<div class="thumbnail marco">
-					<a href="francisco.html">
-						<img src="images/francisco.jpg" class="img-thumbnail">
-						<p class="caption"><strong>FRANCISCO FRIAS<BR>REGIDOR(A)</strong></p>
-					</a>
-				</div>
-			</div>
-			<div class="col-4 col-md-2">
-				<div class="thumbnail marco">
-					<a href="#">
-						<img src="images/Candidato-F.PNG" class="img-thumbnail">
-						<p class="caption"><strong>CANDIDATO 7 <BR>REGIDOR(A)</strong></p>
-					</a>
-				</div>
-			</div>
-			<div class="col-4 col-md-2">
-				<div class="thumbnail marco">
-					<a href="#">
-						<img src="images/Candidato-M.PNG" class="img-thumbnail">
-						<p class="caption"><strong>CANDIDATO 8 <BR>REGIDOR(A)</strong></p>
-					</a>
-				</div>
-			</div>
-			<div class="col-4 col-md-2">
-				<div class="thumbnail marco">
-					<a href="#">
-						<img src="images/Candidato-M.PNG" class="img-thumbnail">
-						<p class="caption"><strong>CANDIDATO 9 <BR>REGIDOR(A)</strong></p>
-					</a>
-				</div>
-			</div>
-			<div class="col-4 col-md-2">
-				<div class="thumbnail marco">
-					<a href="#">
-						<img src="images/Candidato-M.PNG" class="img-thumbnail">
-						<p class="caption"><strong>CANDIDATO 10 <BR>REGIDOR(A)</strong></p>
-					</a>
-				</div>
-			</div>
-			<div class="col-4 col-md-2">
-				<div class="thumbnail marco">
-					<a href="#">
-						<img src="images/Candidato-F.PNG" class="img-thumbnail">
-						<p class="caption"><strong>CANDIDATO 11 <BR>REGIDOR(A)</strong></p>
-					</a>
-				</div>
-			</div>
-			<div class="col-4 col-md-2">
-				<div class="thumbnail marco">
-					<a href="#">
-						<img src="images/Candidato-M.PNG" class="img-thumbnail">
-						<p class="caption"><strong>CANDIDATO 12 <BR>REGIDOR(A)</strong></p>
-					</a>
-				</div>
-			</div>
-			<div class="col-4 col-md-2">
-				<div class="thumbnail marco">
-					<a href="#">
-						<img src="images/Candidato-M.PNG" class="img-thumbnail">
-						<p class="caption"><strong>CANDIDATO 13 <BR>REGIDOR(A)</strong></p>
-					</a>
-				</div>
-			</div>
-			<div class="col-4 col-md-2">
-				<div class="thumbnail marco">
-					<a href="#">
-						<img src="images/Candidato-M.PNG" class="img-thumbnail">
-						<p class="caption"><strong>CANDIDATO 14 <BR>REGIDOR(A)</strong></p>
-					</a>
-				</div>
-			</div>
-			<div class="col-4 col-md-2">
-				<div class="thumbnail marco">
-					<a href="#">
-						<img src="images/Candidato-F.PNG" class="img-thumbnail">
-						<p class="caption"><strong>CANDIDATO 15 <BR>REGIDOR(A)</strong></p>
-					</a>
-				</div>
-			</div>
-			<div class="col-4 col-md-2">
-				<div class="thumbnail marco">
-					<a href="#">
-						<img src="images/Candidato-M.PNG" class="img-thumbnail">
-						<p class="caption"><strong>CANDIDATO 16 <BR>REGIDOR(A)</strong></p>
-					</a>
-				</div>
-			</div>
-			<div class="col-4 col-md-2">
-				<div class="thumbnail marco">
-					<a href="#">
-						<img src="images/Candidato-M.PNG" class="img-thumbnail">
-						<p class="caption"><strong>CANDIDATO 17 <BR>REGIDOR(A)</strong></p>
-					</a>
-				</div>
-			</div>
-			<div class="col-4 col-md-2">
-				<div class="thumbnail marco">
-					<a href="#">
-						<img src="images/Candidato-M.PNG" class="img-thumbnail">
-						<p class="caption"><strong>CANDIDATO 18 <BR>REGIDOR(A)</strong></p>
-					</a>
-				</div>
-			</div>
-			<div class="col-4 col-md-2">
-				<div class="thumbnail marco">
-					<a href="#">
-						<img src="images/ninguno.png" class="img-thumbnail">
-						<p class="caption"><strong>NINGUNO</strong></p>
+						<img src="images/candidatos/ninguno.png" class="img-thumbnail" id="candidatoR0">
+						<p class="caption"><strong><span style="font-size: 1.1rem;">NINGUNO</span></strong></p>
 					</a>
 				</div>
 			</div>
 		</div>
 
-	</div>	
-	
+	</div>
+
 	<footer>
-     <hr>
-     <p>
-       Este simulador de voto automatizado,  a sido modificado para adartarlo a nuestros candidatos. Todas las imagines a exepcion de la del partido y los candidatos, han sido tomadas del simulador oficial de la JCE que se encuentra en la siguiente direccion: www.aprendeavotar.jce.gob.do
-     </p>
-  </footer>
-	
-	<script type="text/javascript" src="js/jquery-3.3.1.slim.min.js" ></script>
+		<hr>
+		<p>
+			Este simulador de voto automatizado, a sido modificado para adartarlo a nuestros candidatos. Todas las
+			imagines a exepcion de la del partido y los candidatos, han sido tomadas del simulador oficial de la JCE que
+			se encuentra en la siguiente direccion: www.aprendeavotar.jce.gob.do
+		</p>
+	</footer>
+
+	<script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
 	<script type="text/javascript" src="js/popper.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script>
-		$(document).ready(function () {
+		if (sessionStorage.getItem('audio') === 'Si') {
+			$(document).ready(function () {
 				setTimeout(function () {
 					var audio1 = new Audio();
 					audio1.src = "audio/regidor.mp3";
 					audio1.play();
 				}, 500);
 			})
+		}
+
+
+		document.getElementById('logo-final').setAttribute('src', sessionStorage.getItem('imageSrcLp'))
+
+		let candidatoR4 = document.getElementById('candidatoR4')
+		
+
+		
+
+		candidatoR4.addEventListener('click', function () {
+			sessionStorage.setItem('regidor', 'FRANCISCO FRIAS')
+			sessionStorage.setItem('imageScrR', 'images/candidatos/francisco.jpg')
+			sessionStorage.setItem('numeroR', 4)
+			window.location.href = 'candidatos_reg.html'
+		})
+
+		
+		/*candidatoR0.addEventListener('click', function () {
+			sessionStorage.setItem('regidor', 'NINGUNO')
+			sessionStorage.setItem('imageScrR', 'images/candidatos/ninguno.png')
+			sessionStorage.setItem('numeroR', 0)
+			window.location.href = 'candidatos_reg.html'
+		})*/
 	</script>
 </body>
+
 </html>
