@@ -1,3 +1,11 @@
+
+.partido {
+  width: 25%; 
+  position: absolute; 
+  margin: 0; 
+  background-color: #fff; 
+  border: 1px solid black;
+}
 a {
   text-decoration: none !important;;
 }
@@ -5,6 +13,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+  #backup_picture{
+    width: 30%;
+  }
 
 #barra {
   background-color: #54301a; 
@@ -26,7 +38,9 @@ img {
 .barra_partidos {
   background-color: #1b508c;
   color: white;
-  padding-top: 1.5em; }
+  padding-top: 1.5em; 
+  margin: 15px;
+}
 
   .barra_partidos_eleccion {
   background-color: #1b508c;
@@ -34,14 +48,18 @@ img {
   padding-top: 0; }
 
   .barra_partidos_eleccion h2{
-  font-size: 2rem;
+  font-size: 1.3rem;
   line-height: 1.1;
   font-weight: 700;
 }
 
  .barra_partidos_eleccion h6{
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   line-height: 1.1;
+  font-weight: 700;
+}
+.barra_partidos_eleccion h5{
+  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -87,10 +105,71 @@ footer {
   margin-bottom: 0.2em;
 }
 
+.numero {
+  box-sizing: border-box;
+  padding: 0.5rem !important;
+  margin-right: auto !important;
+  border-width: 1px;
+  background-color: ghostwhite;
+  position: absolute;
+  z-index: 1;
+  color: #000;
+  text-align: center;
+  border: solid;
+  width: 16%;
+  padding: 0 !important;
+  height: 14% !important;
+}
+.numeroG{
+  font-size: 1.8rem;
+}
 .marco {
   border: 1px solid black;
   margin-bottom: 10PX;
 }
+
+#tabla-lugar  p {
+  margin: 0;
+  font-size: 15px;
+}
+
+#logo-final {
+  width: 50%;
+}
+
+#tabla-candidatos td{
+    width: 14%;
+}
+
+#tabla-candidatos img {
+  width: 14%;
+}
+
+#tabla-candidatos thead {
+  background: #1b508c;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#numeroD, #numeroP, #numeroR{
+  font-size: 2.5rem;
+}
+.barraDatos {
+  background-color: #1b508c;
+}
+
+.barraDatos h2{
+  margin-bottom: 1px; 
+}
+.barraDatos h5{
+  color: white;
+  margin-bottom: 1px;   
+}
+.barraDatos h6{
+  margin-bottom: 1px;   
+}
+
 .blinking {
   -webkit-animation: color_change 0.6s infinite alternate;
   -moz-animation: color_change 0.6s infinite alternate;
@@ -119,6 +198,133 @@ footer {
 @keyframes color_change {
   from { color: #000; }
   to { color: #fff; }
+}
 
+@media screen and (max-width: 768px) { 
+  .barra_partidos_eleccion  h2{
+    font-size: 0.7rem;
+  }
+  .barra_partidos_eleccion  h6{
+    font-size: 0.5rem;
+  }
+  .barra_partidos_eleccion  h5{
+    font-size: 0.5rem;
+  }
+  .black{
+    padding: 0;
+  }
+  #logo-final {
+    width: 20%;
+  }
+  #numeroA, #numeroP, #numeroR{
+    font-size: 1.5rem;
+  }
+  .barraDatos h2{
+    font-size: 1.5rem;  
+  }
+  .barraDatos h5{
+    font-size: 0.9rem;  
+  }
+  .barraDatos h6{
+    font-size: 0.7rem;  
+  }
+}
+
+@media screen and (max-width: 576px) { 
+  .barra_partidos_eleccion  h2{
+    font-size: 0.9rem;
+  }
+  .barra_partidos_eleccion  h6{
+    font-size: 0.4rem;
+  }
+  #header {
+    font-size: 0.5rem;
+  }
+
+  .barra_partidos  a{
+    font-size: 0.7rem;
+  }
+
+  #tabla-candidatos thead {
+
+    font-size: 1rem;
+  }
+
+  #numeroD , #numeroP, #numeroR{
+    font-size: 1.5rem;
+  }
+
+  #backup_picture{
+    width: 30%;
+  }
+
+  .text-grande {
+    font-size: 1em;
+    font-weight: bold;
+  }
+  #numeroA, #numeroP, #numeroR{
+    font-size: 1.4rem;
+  }
+  .barra_partidos_eleccion h6 {
+    margin-bottom: 4;
+  }
+  .numero {
+    border: 2px solid black;
+  }
+
+}
+
+@media screen and (max-width: 460px) { 
+  .barra_partidos_eleccion h6 {
+    margin-bottom: 0;
+  }
+
+  .barraDatos h2{
+    font-size: 1.2rem;  
+  }
+  .barraDatos h5{
+    font-size: 0.7rem;  
+  }
+  .barraDatos h6{
+    font-size: 0.5rem;  
+  }
+    
+}
+
+@media screen and (max-width: 365px) { 
+  .caption {
+    font-size: 0.4em;
+    color: #000; }
+
+    .numero {
+      font-size: 0.6em;
+      border: 1px solid black;
+    }
+
+    .text-grande {
+      font-size: 1em;
+      font-weight: bold;
+    }
+    #numeroA, #numeroP, #numeroR{
+      font-size: 1rem;
+    }
+    .barra_partidos_eleccion h2 {
+      font-size: 0.7rem;
+      margin-bottom: 2px;
+    }
+    .barraDatos h2{
+      font-size: 1rem; 
+      margin-bottom: 1px; 
+    }
+    .barraDatos h5{
+      font-size: 0.5rem; 
+      margin-bottom: 1px; 
+    }
+    .barraDatos h6{
+      font-size: 0.4rem;  
+      margin-bottom: 1px; 
+    }
+    
+}
 
 /*# sourceMappingURL=styles.css.map */
